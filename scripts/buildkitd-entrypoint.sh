@@ -14,7 +14,6 @@
 
 # Run buildkitd in background mode to be able to poll
 # for the done status file and kill process after
-
 rootlesskit \
 	buildkitd \
 	--addr=unix:///run/buildkit/buildkitd.sock \
