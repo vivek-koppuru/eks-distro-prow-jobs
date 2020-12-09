@@ -16,6 +16,7 @@
 # for the done status file and kill process after
 rootlesskit \
 	buildkitd \
+	--debug \
 	--addr=unix:///run/buildkit/buildkitd.sock \
 	--oci-worker-no-process-sandbox \
 	--oci-worker-platform=linux/amd64 \
