@@ -29,6 +29,7 @@ presubmits:
       image-build: "true"
     spec:
       serviceaccountName: presubmits-build-account
+      automountServiceAccountToken: false
       containers:
       - name: build-container
         image: 326475626674.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:a6cf523607893f1a8ed6adcd7e629c0e551b7740
