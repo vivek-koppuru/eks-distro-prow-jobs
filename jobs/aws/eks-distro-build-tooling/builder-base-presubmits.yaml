@@ -13,23 +13,20 @@
 # limitations under the License.
 
 presubmits:
-  aws/eks-distro-build-tooling:
+  vivek-koppuru/eks-distro-build-tooling:
   - name: builder-base-tooling-presubmit
     always_run: false
     run_if_changed: "builder-base/.*"
     max_concurrency: 10
     cluster: "prow-presubmits-cluster"
     extra_refs:
-    - org: eks-distro-pr-bot
-      repo: eks-distro-build-tooling
-      base_ref: main
-    - org: eks-distro-pr-bot
+    - org: vivek-koppuru
       repo: eks-distro-prow-jobs
       base_ref: main
     skip_report: false
     decoration_config:
       gcs_configuration:
-        bucket: s3://prowpresubmitsdataclusterstack-prowbucket7c73355c-vfwwxd2eb4gp
+        bucket: s3://prow-data-presubmits-devstack-prowbucket7c73355c-b1m8oynq5hwg
         path_strategy: explicit
       s3_credentials_secret: s3-credentials
     labels:
