@@ -31,7 +31,7 @@ presubmits:
       serviceaccountName: presubmits-build-account
       containers:
       - name: build-container
-        image: 316434458148.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:e35d4971088ca37db784caf525373f7342126bf3
+        image: 316434458148.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:59e01a3960ed4b4e0b84b8f5e0ea9ddc1b99f1cb
         command:
         - bash
         - -c

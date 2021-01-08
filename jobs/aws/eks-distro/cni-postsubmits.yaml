@@ -30,7 +30,7 @@ postsubmits:
     spec:
       serviceaccountName: postsubmits-build-account
       containers:
-      - image: 316434458148.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:89f14256cd7775881251aeb85900cf7835f711a4
+      - image: 316434458148.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:59e01a3960ed4b4e0b84b8f5e0ea9ddc1b99f1cb
         command:
         - bash
         - -c
