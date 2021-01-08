@@ -13,7 +13,7 @@
 # limitations under the License.
 
 presubmits:
-  aws/eks-distro-build-tooling:
+  vivek-koppuru/eks-distro-build-tooling:
   - name: prometheus-prometheus-tooling-presubmit
     always_run: false
     run_if_changed: "projects/prometheus/prometheus/.*"
@@ -22,7 +22,7 @@ presubmits:
     skip_report: false
     decoration_config:
       gcs_configuration:
-        bucket: s3://prowpresubmitsdataclusterstack-prowbucket7c73355c-vfwwxd2eb4gp
+        bucket: s3://prow-data-presubmits-devstack-prowbucket7c73355c-b1m8oynq5hwg
         path_strategy: explicit
       s3_credentials_secret: s3-credentials
     labels:
@@ -31,7 +31,7 @@ presubmits:
       serviceaccountName: presubmits-build-account
       containers:
       - name: build-container
-        image: 316434458148.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:59e01a3960ed4b4e0b84b8f5e0ea9ddc1b99f1cb
+        image: 326475626674.dkr.ecr.us-west-2.amazonaws.com/eks-distro/builder:59e01a3960ed4b4e0b84b8f5e0ea9ddc1b99f1cb
         command:
         - bash
         - -c
